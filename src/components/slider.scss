@@ -1,10 +1,13 @@
 .project_thumbnails {
-    height: 140px;
+    height: 125px;
     position: relative;
     display: flex;
+    left: -50px;
     div {
         transition: ease-in-out 0.3s;
         width: 100px;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
     }
     img {
         width: 200px;
@@ -17,11 +20,11 @@
         transform: translateY(-10%);
     }
     span {
-        color: white;
+        color: #79FE0C;
         font-weight: 500;
         font-family: monospace;
         cursor: pointer;
-        text-shadow: #000 1px 0 10px;    }
+        }
     span:hover {
         text-decoration: underline;
     }
