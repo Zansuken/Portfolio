@@ -1,7 +1,50 @@
 .home_layout {
     height: 100vh;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     .home_header {
         padding-top: 3em;
+    }
+    .about_section {
+        width: 30vw;
+        min-width: 250px;
+        p {
+            text-align: left;
+        }
+    }
+    .languages {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 auto;
+        ul {
+            text-align: left;
+        }
+    }
+    .links {
+        width: 30vw;
+        min-width: 250px;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            padding: 0;
+            li {
+                font-size: 50px;
+                svg {
+                    transition: ease-in-out 0.3s;
+                }
+                svg:hover {
+                    fill: #7451eb;
+                }
+            }
+        }
+    }
+    .my_projects {
+        width: fit-content;
+        align-self: center;
     }
 }
