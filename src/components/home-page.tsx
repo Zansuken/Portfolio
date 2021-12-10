@@ -2,6 +2,7 @@ import './home-page.scss'
 import { FaGithubSquare, FaTwitterSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 
+
 export function buildHomePage() {
     return (
         <div className="home_layout">
@@ -37,15 +38,15 @@ export function buildHomePage() {
             <div className="links">
                 <h2>Links</h2>
                 <ul>
-                    <li><a href="https://github.com/Zansuken"><FaGithubSquare fill='#79FE0C'/></a></li>
-                    <li><a href="https://www.linkedin.com/in/sébastien-doom-212639222/"><FaLinkedin fill='#79FE0C'/></a></li>
-                    <li><a href="https://twitter.com/doom_sebastien"><FaTwitterSquare fill='#79FE0C'/></a></li>
-                    <li><a href="https://www.instagram.com/zansuken/"><FaInstagramSquare fill='#79FE0C'/></a></li>
+                    <li><a href="https://github.com/Zansuken"><FaGithubSquare fill='#79FE0C' /></a></li>
+                    <li><a href="https://www.linkedin.com/in/sébastien-doom-212639222/"><FaLinkedin fill='#79FE0C' /></a></li>
+                    <li><a href="https://twitter.com/doom_sebastien"><FaTwitterSquare fill='#79FE0C' /></a></li>
+                    <li><a href="https://www.instagram.com/zansuken/"><FaInstagramSquare fill='#79FE0C' /></a></li>
                 </ul>
             </div>
             <div className="my_projects">
                 <h2>Click on any project</h2>
-                <AiOutlineArrowDown />
+                    <AiOutlineArrowDown />
             </div>
         </div>
     )

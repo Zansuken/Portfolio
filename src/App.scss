@@ -10,12 +10,13 @@ h1 {
 
 .app_footer {
   position: fixed;
-  bottom: 0;
+  bottom: -100px;
   width: 100%;
   padding: 0.5em 0;
   display: flex;
   justify-content: center;
   background-color: dimgrey;
+  transition: ease-in-out 0.5s;
   ul {
     display: flex;
     gap: 1em;
@@ -24,4 +25,7 @@ h1 {
       text-decoration: none;
     }
   }
+}
+.app_footer:hover {
+  bottom: 0;
 }
