@@ -1,6 +1,5 @@
 import './home-page.scss'
-import { FaGithubSquare, FaTwitterSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
-import { AiOutlineArrowDown } from 'react-icons/ai';
+import { FaGithubSquare, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaCode } from 'react-icons/fa';
 
 
 export function buildHomePage() {
@@ -20,8 +19,10 @@ export function buildHomePage() {
                     My name is Sébastien Doom, front end trainee web developper coming from Belgium and living in France.<br />
                     I started coding seriously in 2021, I am currently following a web dev formation from OpenClassrooms.
                 </p>
+                <span className='section_label'>ABOUT</span>
             </div>
             <div className='languages'>
+            <span className='section_label'><FaCode/></span>
                 <h2>Languages</h2>
                 <ul>
                     <li>HTML5</li>
@@ -43,10 +44,7 @@ export function buildHomePage() {
                     <li><a href="https://twitter.com/doom_sebastien"><FaTwitterSquare fill='#79FE0C' /></a></li>
                     <li><a href="https://www.instagram.com/zansuken/"><FaInstagramSquare fill='#79FE0C' /></a></li>
                 </ul>
-            </div>
-            <div className="my_projects">
-                <h2>Click on any project</h2>
-                    <AiOutlineArrowDown />
+                <span className='section_label'>LINKS</span>
             </div>
         </div>
     )

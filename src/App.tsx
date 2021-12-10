@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import { slider } from './components/slider';
 import { buildHomePage } from './components/home-page';
