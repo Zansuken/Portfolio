@@ -3,15 +3,22 @@
     padding: 0 10vw;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-image: url(wil-stewart-RpDA3uYkJWM-unsplash.jpg);
     .home_header {
         padding-top: 3em;
     }
     .about_section {
         width: 30vw;
         min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(2px);
+        border: #79FE0C 1px solid;
+        border-radius: 8px;
         p {
             text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
     .languages {
@@ -19,19 +26,27 @@
         display: flex;
         flex-direction: column;
         margin: 0 0 0 auto;
+        backdrop-filter: blur(2px);
+        border: #79FE0C 1px solid;
+        border-radius: 8px;
         ul {
             text-align: left;
+            margin: 0 20px 20px 20px;
         }
     }
     .links {
         width: 30vw;
         min-width: 250px;
+        backdrop-filter: blur(2px);
+        border: #79FE0C 1px solid;
+        border-radius: 8px;
         ul {
             list-style: none;
             display: flex;
             justify-content: center;
             gap: 1em;
             padding: 0;
+            margin: 0 20px 20px 20px;
             li {
                 font-size: 50px;
                 svg {
