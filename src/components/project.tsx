@@ -1,14 +1,18 @@
 import '../sass/project.scss'
+import { SliderData } from './sliderData'
+import {GrFormClose} from 'react-icons/gr'
+import { FC } from 'react'
 
-export let projectUrl = "";
-export function ProjectView() {
+export const ProjectView :FC <{index: number, onClick: () => void }> = (props) => {
 
-
-    if (projectUrl.length === 0) {
-        return
-    } else {
-        return <iframe src={projectUrl} frameBorder="0" className="projectView" title='test'></iframe>
-
-    }
+        return (
+    
+                <div className='projectView'>
+    
+                <button onClick={() => props.onClick()}><GrFormClose /></button>
+                <iframe src={SliderData[props.index].url} frameBorder="0" title={SliderData[0].name}></iframe>
+                </div>
+    
+        )
 
 }

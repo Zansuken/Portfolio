@@ -1,9 +1,10 @@
 import { SliderData } from "./sliderData";
 import '../sass/slider.scss'
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { projectUrl } from "./project";
+import { FC } from "react";
 
-export function Slider() {
+export const Slider :FC <{onClick: (index: number) => void}> = (props) => {
+    
     
         return (
             <div className="project_thumbnails app_footer">
@@ -13,10 +14,9 @@ export function Slider() {
                 </div>
                 {SliderData.map((slide, index) => {
                     return (
-                        <div className="project_thumbnail" key={index} >
-                            <div>
-                                <img src={slide.thumbnail} alt={slide.name} onClick={() => projectUrl
-                                } />
+                        <div className="project_thumbnail" key={index}>
+                            <div onClick={() => props.onClick(index)}>
+                                <img src={slide.thumbnail} alt={slide.name} />
                                 <span>{slide.name}</span>
                             </div>
                         </div>
