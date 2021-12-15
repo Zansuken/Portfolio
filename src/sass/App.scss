@@ -8,6 +8,20 @@ h1 {
   margin: 0;
 }
 
+.projectView {
+  display: flex;
+  height: 70vh;
+  width: 80vw;
+  padding: 0;
+  background-color: #FFF;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  border: 1px solid #79FE0C;
+}
+
 .app_footer {
   position: fixed;
   bottom: -100px;

@@ -1,8 +1,7 @@
-import './home-page.scss'
+import '../sass/home-page.scss'
 import { FaGithubSquare, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaCode } from 'react-icons/fa';
 
-
-export function buildHomePage() {
+export function HomePage() {
     return (
         <div className="home_layout">
             <div className="home_header">
