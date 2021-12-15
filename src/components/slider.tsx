@@ -5,9 +5,8 @@ import { projectUrl } from "./project";
 
 export function Slider() {
     
-    for (const item of SliderData) {
         return (
-            <div className="project_thumbnails">
+            <div className="project_thumbnails app_footer">
                 <div className="my_projects">
                     <h2>Click on any project</h2>
                     <AiOutlineArrowDown />
@@ -25,5 +24,4 @@ export function Slider() {
                 })}
             </div>
         )
-    }
 }

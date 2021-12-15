@@ -10,9 +10,7 @@ function App() {
         <HomePage />
         {ProjectView()}
       </main>
-      <footer className="app_footer">
-        {Slider()}
-      </footer>
+      <Slider />
     </div>
   );
 }

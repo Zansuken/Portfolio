@@ -1,14 +1,12 @@
 .project_thumbnails {
     height: 125px;
-    position: relative;
     display: flex;
-    left: -50px;
     .my_projects {
         width: fit-content;
         align-self: center;
         position: absolute;
-        right: 0;
-        transform: translate(-134%, 0);
+        left: 50%;
+        transform: translate(-50%, 0);
         top: -75%;
         transition: ease-in-out 0.3s;
         svg {
