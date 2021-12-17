@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaCode } from "react-icons/fa"
+import '../sass/MyLanguages.scss'
 
 export function MyLanguages() {
 

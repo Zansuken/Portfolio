@@ -1,4 +1,5 @@
 import { useState } from "react"
+import '../sass/AboutMe.scss'
 
 export function AboutMe() {
 

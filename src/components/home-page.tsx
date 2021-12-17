@@ -2,6 +2,7 @@ import '../sass/home-page.scss'
 import AboutMe from './AboutMe';
 import MyLanguages from './MyLanguages';
 import MyLinks from './MyLinks';
+import Resume from './Resume';
 
 export function HomePage() {
 
@@ -16,6 +17,7 @@ export function HomePage() {
                     Created with React, Typescript and SASS...
                 </h3>
             </div>
+            <Resume />
             <AboutMe />
             <MyLanguages />
             <MyLinks />

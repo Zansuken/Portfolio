@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa"
+import '../sass/MyLinks.scss'
 
 export function MyLinks() {
 
