@@ -4,6 +4,8 @@ import MyLanguages from './MyLanguages';
 import MyLinks from './MyLinks';
 
 export function HomePage() {
+
+    
     return (
         <div className="home_layout">
             <div className="home_header">

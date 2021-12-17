@@ -10,7 +10,7 @@ export const ProjectView :FC <{index: number, onClick: () => void }> = (props) =
                 <div className='projectView'>
     
                 <button onClick={() => props.onClick()}><GrFormClose /></button>
-                <iframe src={SliderData[props.index].url} frameBorder="0" title={SliderData[0].name}></iframe>
+                <iframe src={SliderData[props.index].url} frameBorder="0" title={SliderData[props.index].name}></iframe>
                 </div>
     
         )

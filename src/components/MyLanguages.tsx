@@ -1,9 +1,18 @@
+import { useState } from "react"
 import { FaCode } from "react-icons/fa"
 
 export function MyLanguages() {
+
+    const [visibility, setVisibility] = useState(true)
+
+    function hideSection() {
+        visibility? setVisibility(false):setVisibility(true)
+    }
     return (
-        <div className='languages'>
-            <span className='section_label'><FaCode/></span>
+        <div className={visibility?'languages':'languages-hidden'}>
+            <span className='section_label' onClick={() => {
+                    hideSection()
+                }}><FaCode/></span>
                 <h2>Languages</h2>
                 <ul>
                     <li>HTML5</li>
