@@ -1,3 +1,5 @@
+@import 'index.scss';
+
 .languages {
     width: 284px;
     min-width: 250px;
@@ -8,7 +10,7 @@
     flex-direction: column;
     margin: 0;
     backdrop-filter: blur(2px);
-    border: #79FE0C 1px solid;
+    border: $green-color 1px solid;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
@@ -23,18 +25,18 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         cursor: pointer;
-        color: chartreuse;
+        color: $green-color;
         background-color: transparent;
-        border: chartreuse 1px solid;
+        border: $green-color 1px solid;
         border-left: 1px solid transparent;
         cursor: pointer;
         &:hover {
             color: rgba(0, 0, 0, 0.75);
-            background: chartreuse;
+            background: $green-color;
         }
     }
     h2 {
-        border-bottom: chartreuse 1px solid;
+        border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
     }
     ul {
@@ -54,7 +56,7 @@
     flex-direction: column;
     margin: 0;
     backdrop-filter: blur(2px);
-    border: #79FE0C 1px solid;
+    border: $green-color 1px solid;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
@@ -70,13 +72,13 @@
         border-top-left-radius: 0;
         cursor: pointer;
         &:hover {
-            color: chartreuse;
+            color: $green-color;
             background-color: transparent;
-            border: chartreuse 1px solid;
+            border: $green-color 1px solid;
         }
     }
     h2 {
-        border-bottom: chartreuse 1px solid;
+        border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
     }
     ul {

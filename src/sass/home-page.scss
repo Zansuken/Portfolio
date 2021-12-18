@@ -1,3 +1,5 @@
+@import 'index.scss';
+
 .home_layout {
     height: 100vh;
     padding: 0 10vw;
@@ -12,7 +14,7 @@
     }
     span {
         width: fit-content;
-        background: chartreuse;
+        background: $green-color;
         color: rgb(0 0 0 / 75%);
         font-weight: bolder;
         font-size: xx-large;

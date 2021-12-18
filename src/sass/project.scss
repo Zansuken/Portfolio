@@ -1,4 +1,6 @@
-    .projectView {
+@import 'index.scss';
+
+.projectView {
         position: absolute;
         height: 70vh;
         width: 80vw;
@@ -9,7 +11,7 @@
             position: absolute;
             top: -40px;
             right: 0;
-            background: chartreuse;
+            background: $green-color;
             color: rgba(0, 0, 0, 0.75);
             font-weight: bolder;
             font-size: xxx-large;

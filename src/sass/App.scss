@@ -1,6 +1,8 @@
+@import './index.scss';
+
 .App {
   text-align: center;
-  color: #79FE0C;
+  color: $green-color;
   font-family: monospace;
 }
 
@@ -19,7 +21,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 8px;
-  border: 1px solid #79FE0C;
+  border: 1px solid $green-color;
 }
 
 .app_footer {

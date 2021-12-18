@@ -1,3 +1,5 @@
+@import 'index.scss';
+
 section {
     width: 600px;
     min-width: 250px;
@@ -9,19 +11,19 @@ section {
     flex-direction: column;
     margin: 0;
     backdrop-filter: blur(2px);
-    border: #79FE0C 1px solid;
+    border: $green-color 1px solid;
     border-radius: 8px;
     border-top-left-radius: 0;
     transition: ease-in-out 0.3s;
     a {
-        color: chartreuse;
+        color: $green-color;
     }
     h3 {
-        border-bottom: chartreuse 1px solid;
+        border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
     }
     h2 {
-        border-bottom: chartreuse 1px solid;
+        border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
     }
     ul {
@@ -34,7 +36,7 @@ section {
     img {
         width: 250px;
         object-fit: cover;
-        border: chartreuse 1px solid;
+        border: $green-color 1px solid;
         border-right: none;
         border-bottom: none;
     }
@@ -53,14 +55,14 @@ section {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         cursor: pointer;
-        color: chartreuse;
+        color: $green-color;
         background-color: transparent;
-        border: chartreuse 1px solid;
+        border: $green-color 1px solid;
         border-right: 1px solid transparent;
         cursor: pointer;
         &:hover {
             color: rgba(0, 0, 0, 0.75);
-            background: chartreuse;
+            background: $green-color;
         }
     }
 }
@@ -80,9 +82,9 @@ section {
         border-bottom-right-radius: 0;
         cursor: pointer;
         &:hover {
-            color: chartreuse;
+            color: $green-color;
             background-color: transparent;
-            border: chartreuse 1px solid;
+            border: $green-color 1px solid;
         }
     }
 

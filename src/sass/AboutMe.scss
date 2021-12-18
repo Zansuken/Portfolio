@@ -1,3 +1,5 @@
+@import './index.scss';
+
 .about_section {
     width: 284px;
     min-width: 250px;
@@ -7,13 +9,13 @@
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(2px);
-    border: #79FE0C 1px solid;
+    border: $green-color 1px solid;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
 
     h2 {
-        border-bottom: chartreuse 1px solid;
+        border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
         margin-bottom: 0;
     }
@@ -32,14 +34,14 @@
         padding: 0.2em;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
-        color: chartreuse;
+        color: $green-color;
         background-color: transparent;
-        border: chartreuse 1px solid;
+        border: $green-color 1px solid;
         border-left: 1px solid transparent;
         cursor: pointer;
         &:hover {
             color: rgba(0, 0, 0, 0.75);
-            background: chartreuse;
+            background: $green-color;
         }
     }
 }
@@ -54,12 +56,12 @@
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(2px);
-    border: #79FE0C 1px solid;
+    border: $green-color 1px solid;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
     h2 {
-        border-bottom: chartreuse 1px solid;
+        border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
         margin-bottom: 0;
     }
@@ -80,9 +82,9 @@
         border-top-left-radius: 0;
         cursor: pointer;
         &:hover {
-            color: chartreuse;
+            color: $green-color;
             background-color: transparent;
-            border: chartreuse 1px solid;
+            border: $green-color 1px solid;
         }
     }
 }
