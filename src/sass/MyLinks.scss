@@ -33,7 +33,7 @@
     span {
         width: 1em;
         position: absolute;
-        right: -36.4px;
+        right: -38.4px;
         bottom: -1px;
         word-break: break-all;
         line-height: 0.9em;
@@ -58,7 +58,8 @@
     max-width: 325px;
     position: absolute;
     top: 408px;
-    transform: translateX(calc(-150% - 2px));
+    left: 0;
+    transform: translateX(calc(-100%));
     backdrop-filter: blur(2px);
     border: #79FE0C 1px solid;
     border-radius: 8px;

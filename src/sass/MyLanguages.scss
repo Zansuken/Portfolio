@@ -48,7 +48,8 @@
     max-width: 325px;
     position: absolute;
     top: 130px;
-    transform: translateX(calc(-150% - 2px));
+    left: 0;
+    transform: translateX(calc(-100%));
     display: flex;
     flex-direction: column;
     margin: 0;

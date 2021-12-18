@@ -4,10 +4,11 @@
     .my_projects {
         width: fit-content;
         align-self: center;
+        padding-bottom: 1em;
         position: absolute;
         left: calc(50% + 50px);
         transform: translate(-50%, 0);
-        top: -75%;
+        top: -70%;
         transition: ease-in-out 0.3s;
         svg {
             font-size: 30px;

@@ -47,7 +47,8 @@
     width: 284px;
     position: absolute;
     top: 180px;
-    transform: translateX(calc(-150% - 2px));
+    left: 0;
+    transform: translateX(calc(-100%));
     min-width: 250px;
     max-width: 325px;
     display: flex;
