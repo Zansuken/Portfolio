@@ -25,21 +25,29 @@
     span {
         width: 1em;
         position: absolute;
-        right: -36.4px;
+        right: -38.4px;
         bottom: -1px;
         word-break: break-all;
         line-height: 0.9em;
         padding: 0.2em;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
+        color: chartreuse;
+        background-color: transparent;
+        border: chartreuse 1px solid;
+        border-left: 1px solid transparent;
         cursor: pointer;
+        &:hover {
+            color: rgba(0, 0, 0, 0.75);
+            background: chartreuse;
+        }
     }
 }
 .about_section-hidden {
     width: 284px;
     position: absolute;
     top: 180px;
-    left: -286px;
+    transform: translateX(calc(-150% - 2px));
     min-width: 250px;
     max-width: 325px;
     display: flex;
@@ -70,5 +78,10 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         cursor: pointer;
+        &:hover {
+            color: chartreuse;
+            background-color: transparent;
+            border: chartreuse 1px solid;
+        }
     }
 }

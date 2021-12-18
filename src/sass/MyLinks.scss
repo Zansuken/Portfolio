@@ -41,6 +41,15 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         cursor: pointer;
+        color: chartreuse;
+        background-color: transparent;
+        border: chartreuse 1px solid;
+        border-left: 1px solid transparent;
+        cursor: pointer;
+        &:hover {
+            color: rgba(0, 0, 0, 0.75);
+            background: chartreuse;
+        }
     }
 }
 .links-hidden {
@@ -49,7 +58,7 @@
     max-width: 325px;
     position: absolute;
     top: 408px;
-    left: -286px;
+    transform: translateX(calc(-150% - 2px));
     backdrop-filter: blur(2px);
     border: #79FE0C 1px solid;
     border-radius: 8px;
@@ -87,5 +96,10 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         cursor: pointer;
+        &:hover {
+            color: chartreuse;
+            background-color: transparent;
+            border: chartreuse 1px solid;
+        }
     }
 }
