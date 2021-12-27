@@ -11,7 +11,7 @@ export default function Resume() {
     }
 
     return (
-        <section className={visibility ? 'resume' : 'resume-hidden'}>
+        <section className={visibility ? 'resume-hidden' : 'resume'}>
             <span className='section_label' onClick={() => {
                 hideSection()
             }}>RESUME</span>

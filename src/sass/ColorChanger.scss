@@ -1,0 +1,37 @@
+@import 'index.scss';
+
+.colors-changer {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+    background-color: $green-color;
+    padding: 0.5em;
+    position: absolute;
+    border-radius: 8px;
+
+    button {
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50%;
+        appearance: none;
+        &:hover {
+            border: black 2px solid;
+        }
+    }
+    .green-button {
+        background-color: $green-color;
+    }
+    .red-button {
+        background-color: $red-color;
+    }
+    .cyan-button {
+        background-color: $cyan-color;
+    }
+    .blue-button {
+        background-color: $blue-color;
+    }
+    .purple-button {
+        background-color: $purple-color;
+    }
+}

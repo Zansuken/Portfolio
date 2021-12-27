@@ -10,7 +10,7 @@ export function MyLinks() {
         visibility? setVisibility(false):setVisibility(true)
     }
     return (
-        <div className={visibility?'links':'links-hidden'}>
+        <div className={visibility?'links-hidden':'links'}>
                 <h2>Links</h2>
                 <ul>
                     <li><a href="https://github.com/Zansuken"><FaGithubSquare fill='#79FE0C' /></a></li>

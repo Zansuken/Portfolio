@@ -10,7 +10,7 @@ export function MyLanguages() {
         visibility? setVisibility(false):setVisibility(true)
     }
     return (
-        <div className={visibility?'languages':'languages-hidden'}>
+        <div className={visibility?'languages-hidden':'languages'}>
             <span className='section_label' onClick={() => {
                     hideSection()
                 }}><FaCode/></span>

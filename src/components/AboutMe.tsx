@@ -10,7 +10,7 @@ export function AboutMe() {
     }
 
     return (
-        <div className={visibility?'about_section':'about_section-hidden'}>
+        <div className={visibility?'about_section-hidden':'about_section'}>
                 <h2>About me</h2>
                 <p>
                     My name is Sébastien Doom, front end trainee web developper coming from Belgium and living in France.<br />
