@@ -1,12 +1,15 @@
 import '../sass/home-page.scss'
 import AboutMe from './AboutMe';
-import ColorChanger from './ColorChanger';
+// import ColorChanger from './ColorChanger';
 import MyLanguages from './MyLanguages';
 import MyLinks from './MyLinks';
 import Resume from './Resume';
 
 export function HomePage() {
 
+    // const [color, setColor] = useState(Number)
+    
+    // let actualColor = color
     
     return (
         <div className="home_layout">
@@ -17,7 +20,11 @@ export function HomePage() {
                 <h3>
                     Created with React, Typescript and SASS...
                 </h3>
-                <ColorChanger />
+                {/* <ColorChanger onClick={(index) => {
+                    setColor(index)
+                    console.log(actualColor);
+                    
+                    }} /> */}
             </div>
             <Resume />
             <AboutMe />

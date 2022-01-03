@@ -4,7 +4,7 @@
     display: flex;
     gap: 0.5em;
     justify-content: space-between;
-    background-color: $green-color;
+    background-color: rgb(56, 54, 54);
     padding: 0.5em;
     position: absolute;
     border-radius: 8px;
@@ -15,8 +15,9 @@
         border: none;
         border-radius: 50%;
         appearance: none;
+        cursor: pointer;
         &:hover {
-            border: black 2px solid;
+            border: white 1px inset;
         }
     }
     .green-button {

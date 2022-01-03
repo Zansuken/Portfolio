@@ -1,22 +1,21 @@
+import { FC } from 'react'
 import '../sass/ColorChanger.scss'
+import layoutColorButtons from './LayoutColors'
 
-const ColorChanger = () => {
+const ColorChanger :FC <{onClick: (index: number) => void}> = (props) => {
 
-    const colors = [
-        'green',
-        'red',
-        'blue'
-    ]
-    
-    return (
-        <div className="colors-changer">
-            <button className="green-button"></button>
-            <button className="red-button"></button>
-            <button className="cyan-button"></button>
-            <button className="blue-button"></button>
-            <button className="purple-button"></button>
-        </div>
+    return(
+        <div className="colors-changer">{layoutColorButtons.map((color, index) => {
+            return (
+                    <button className={color.color + '-button'} key={index}
+                    onClick={() => {props.onClick(index)
+                    console.log(props);
+                    }}></button>
+            )
+        })}</div>
+        
     )
+
 }
 
 export default ColorChanger

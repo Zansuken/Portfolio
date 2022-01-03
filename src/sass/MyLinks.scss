@@ -11,6 +11,9 @@
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
+    @media (max-width: 375px) {
+        top: 288px;
+    }
     h2 {
         border-bottom: $green-color 1px solid;
         padding-bottom: 1em;
@@ -51,6 +54,13 @@
         &:hover {
             color: rgba(0, 0, 0, 0.75);
             background: $green-color;
+        }
+        @media (max-width: 980px) {
+            content: url(../assets/link-svgrepo-com.svg);
+            background: chartreuse;
+            svg {
+                fill: chartreuse
+            }
         }
     }
 }
@@ -99,10 +109,19 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         cursor: pointer;
+        transition: ease-in-out 0.3s;
         &:hover {
-            color: $green-color;
-            background-color: transparent;
-            border: $green-color 1px solid;
+            transform: translateX(5px);
+            width: calc(1em + 5px);
         }
+        @media (max-width: 980px) {
+            top: 98px;
+            bottom: unset;
+            height: fit-content;
+            content: url(../assets/link-svgrepo-com.svg);
+        }
+    }
+    @media (max-width: 980px) {
+        top: 0;
     }
 }
