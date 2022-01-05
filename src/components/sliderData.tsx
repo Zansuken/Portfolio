@@ -2,17 +2,17 @@ export const SliderData = [
     {
         thumbnail: "images/loopstudios-screenshot.png",
         name: "Loopstudios",
-        url: "https://affectionate-engelbart-073c92.netlify.app"
+        url: "https://loopstudios-zansuken.netlify.app"
     },
     {
         thumbnail: "images/huddle-screenshot.png",
         name: "Huddle",
-        url: "https://modest-leakey-cb03b7.netlify.app"
+        url: "https://huddle-zansuken.netlify.app"
     },
     {
         thumbnail: "images/chat-app-screenshot.png",
         name: "Chat App",
-        url: "https://quizzical-payne-0d56fc.netlify.app"
+        url: "https://chat-app-zansuken.netlify.app"
     },
     {
         thumbnail: "images/faq-screenshot.png",
