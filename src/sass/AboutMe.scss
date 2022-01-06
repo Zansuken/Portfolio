@@ -85,13 +85,16 @@
         cursor: pointer;
         transition: ease-in-out 0.3s;
         &:hover {
-            transform: translateX(5px);
-            width: calc(1em + 5px);
+            transform: translateX(-5px);
         }
         @media (max-width: 980px) {
             top: 5px;
             height: fit-content;
             content: url(../assets/info-svgrepo-com.svg);
+            &:hover {
+                transform: translateX(5px);
+                width: calc(1em + 5px);
+            }
         }
     }
     @media (max-width: 980px) {

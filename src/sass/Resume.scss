@@ -41,6 +41,12 @@ section {
         border-bottom: none;
         border-bottom-right-radius: 8px;
     }
+    @media (max-width: 600px) {
+        position: relative;
+        img {
+            display: none;
+        }
+    }
 }
 
 .resume {
@@ -91,15 +97,22 @@ section {
         transition: ease-in-out 0.3s;
         &:hover {
             transform: translateX(-5px);
-            width: calc(1em + 5px);
         }
         @media (max-width: 980px) {
             top: 5px;
             content: url(../assets/resume-svgrepo-com.svg);
+            &:hover {
+                transform: translateX(-5px);
+                width: calc(1em + 5px);
+            }
         }
     }
     @media (max-width: 980px) {
         top: 0;
+    }
+    @media (max-width: 600px) {
+        right: -56.4px;
+        top: -130px;
     }
 }
 
@@ -108,4 +121,8 @@ section {
     .skills-sections {
         width: 100%;
     }
+}
+
+.close_label {
+    position: relative;
 }

@@ -45,3 +45,11 @@ h1 {
 .app_footer:hover {
   bottom: 0;
 }
+
+@media (max-width: 1030px) {
+  .app_footer:hover {
+    bottom: 0;
+    height: 95vh;
+    transform: translateX(0%);
+  }
+}
