@@ -4,9 +4,9 @@ section {
     // width: 1000px;
     height: 70vh;
     position: absolute;
-    // right: 50%;
+    right: 50%;
     top: 180px;
-    // transform: translateX(50%);
+    transform: translateX(50%);
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -45,10 +45,9 @@ section {
         border-bottom: none;
         border-radius: 8px;
     }
-    @media (max-width: 600px) {
-        img {
-            // display: none;
-        }
+    @media (max-width: 980px) {
+        right: unset;
+        transform: unset;
     }
 }
 
@@ -88,12 +87,15 @@ section {
         }
 
     }
+    @media (max-width: 562px) {
+        height: fit-content;
+    }
 }
 .resume-hidden {
     top: 180px;
     right: 0;
     transform: translateX(100%);
-    position: relative;
+    position: absolute;
     span {
         width: 1em;
         position: absolute;
