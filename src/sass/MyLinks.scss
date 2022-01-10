@@ -5,14 +5,16 @@
     min-width: 250px;
     max-width: 325px;
     position: absolute;
-    top: 704px;
-    backdrop-filter: blur(2px);
+    top: 130px;
+    left: 460px;
+    background-color: rgb(65, 65, 65);
     border: $green-color 1px solid;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
-    @media (max-width: 375px) {
-        top: 195px;
+    @media (max-width: 980px) {
+        top: 333px;
+        left: unset;
     }
     h2 {
         border-bottom: $green-color 1px solid;
@@ -56,7 +58,15 @@
             background: $green-color;
         }
         @media (max-width: 980px) {
-            content: url(../assets/link-svgrepo-com.svg);
+            top: 5px;
+            content: url(../assets/cross-svgrepo-com.svg);
+            left: unset;
+            right: 0px;
+            top: 0px;
+            border: $green-color 1px solid;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
             background: chartreuse;
             svg {
                 fill: chartreuse
@@ -110,14 +120,17 @@
         border-top-left-radius: 0;
         cursor: pointer;
         transition: ease-in-out 0.3s;
+        transform: translateX(-5px);
         &:hover {
-            transform: translateX(5px);
+            transform: translateX(0px);
         }
         @media (max-width: 980px) {
-            top: 98px;
+            top: 118px;
             bottom: unset;
             height: fit-content;
             content: url(../assets/link-svgrepo-com.svg);
+            transform: translateX(-1px);
+
             &:hover {
                 transform: translateX(5px);
                 width: calc(1em + 5px);

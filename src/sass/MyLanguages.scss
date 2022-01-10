@@ -9,13 +9,21 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    backdrop-filter: blur(2px);
+    background-color: rgb(65, 65, 65);
     border: $green-color 1px solid;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     transition: ease-in-out 0.3s;
-    @media (max-width: 375px) {
-        top: 101px;
+    // @media (max-width: 375px) {
+    //     top: 101px;
+    // }
+    @media (max-width: 980px) {
+        top: 130px;
+        left: 360px;
+    }
+    @media (max-width: 666px) {
+        top: 180px;
+        left: unset;
     }
     span {
         width: 1em;
@@ -30,9 +38,23 @@
         cursor: pointer;
         border-left: 1px solid transparent;
         cursor: pointer;
+        @media (max-width: 980px) {
+            top: 5px;
+            content: url(../assets/cross-svgrepo-com.svg);
+            left: unset;
+            right: 0px;
+            top: 0px;
+            border: $green-color 1px solid;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+        }
         &:hover {
             color: rgba(0, 0, 0, 0.75);
             background: $green-color;
+        }
+        svg {
+            width: 0.8em;
         }
     }
     h2 {
@@ -72,18 +94,22 @@
         border-top-left-radius: 0;
         cursor: pointer;
         transition: ease-in-out 0.3s;
+        transform: translateX(-5px);
         &:hover {
-            transform: translateX(5px);
-            width: calc(1em + 5px);
+            transform: translateX(0px);
+        }
+        svg {
+            width: 0.8em;
         }
         @media (max-width: 980px) {
             top: 50px;
             bottom: unset;
-            height: fit-content;
+            right: -40px;
+            height: -36.4px;
         }
     }
     @media (max-width: 980px) {
-        top: 0;
+        top: 20px;
     }
     h2 {
         border-bottom: $green-color 1px solid;

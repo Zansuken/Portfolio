@@ -1,6 +1,6 @@
 import { useState } from "react"
 import '../sass/Resume.scss';
-import picture from '../assets/profile-picture.jpg';
+import picture from '../assets/CV.png';
 
 export default function Resume() {
 
@@ -15,7 +15,8 @@ export default function Resume() {
             <span className='section_label' onClick={() => {
                 hideSection()
             }}>RESUME</span>
-            <h2>Resume</h2>
+            <img src={picture} alt="curriculum vitae" />
+            {/* <h2>Resume</h2>
             <h3>Experiences</h3>
             <ul>
                 <li><div><h4>Crew Team Member at <a href="https://www.restaurants.mcdonalds.fr/mcdonalds-saint-jean-d-angely">McDonald's Saint-Jean D'Angely</a><legend>From 2021 till now</legend></h4></div></li>
@@ -45,7 +46,7 @@ export default function Resume() {
                     </ul>
                 </div>
                 <img src={picture} alt="Sébastien Doom" />
-            </div>
+            </div> */}
 
         </section>
     )
