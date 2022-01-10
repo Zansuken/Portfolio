@@ -41,6 +41,9 @@ h1 {
       text-decoration: none;
     }
   }
+  @media (max-width: 720px) {
+    bottom: -132px;
+}
 }
 .app_footer:hover {
   bottom: 0;
@@ -51,5 +54,45 @@ h1 {
     bottom: 0;
     height: 95vh;
     transform: translateX(0%);
+    justify-content: unset;
   }
+}
+
+.mobile_button {
+  display: none;
+  @media (max-width: 720px) {
+      display: flex;
+      position: absolute;
+      height: 30px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      appearance: none;
+      color: rgba(0,0,0,0.75);
+      font-weight: bold;
+      border: none;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      font-size: 1.5em;
+      background: chartreuse;
+      cursor: pointer;
+  }
+}
+.project_mobile_thumbnail {
+  width: fit-content;
+  background-color: rgb(65, 65, 65);
+  padding-bottom: 5px;
+  border-bottom: chartreuse 1px solid;
+  img {
+    width: calc(100vw - 15px);
+    height: 150px;
+    object-fit: cover;
+    border-bottom: chartreuse 1px solid;
+  }
+  span {
+    font-weight: bold;
+  }
+  @media (min-width: 720px) {
+    display: none;
+}
 }
