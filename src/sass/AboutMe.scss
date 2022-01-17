@@ -100,10 +100,10 @@
             top: 5px;
             right: -40px;
             height: fit-content;
+            border-left: 8px solid chartreuse;
             content: url(../assets/info-svgrepo-com.svg);
             &:hover {
                 transform: translateX(5px);
-                width: calc(1em + 5px);
             }
         }
     }

@@ -119,11 +119,10 @@ section {
             border-radius: 8px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-            
+            border-left: 7px solid chartreuse;
             content: url(../assets/resume-svgrepo-com.svg);
             &:hover {
-                transform: translateX(-5px);
-                width: calc(1em + 5px);
+                transform: translateX(10px);
             }
         }
     }
