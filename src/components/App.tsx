@@ -14,7 +14,7 @@ function App() {
       <main>
         <HomePage />
         { view !== null && <ProjectView onClick={() => setView(null)} index={view} />}
-        <button className="mobile_button">Projects</button>
+        <button className="mobile_button" onClick={() => window.scrollBy(0, window.innerHeight)}>Projects</button>
         {SliderData.map((slide, index) => {
                     return (
                         <div className="project_mobile_thumbnail" key={index}>
