@@ -49,14 +49,14 @@ h1 {
   bottom: 0;
 }
 
-@media (max-width: 1030px) {
-  .app_footer:hover {
-    bottom: 0;
-    height: 95vh;
-    transform: translateX(0%);
-    justify-content: unset;
-  }
-}
+// @media (max-width: 1030px) {
+//   .app_footer:hover {
+//     bottom: 0;
+//     height: 95vh;
+//     transform: translateX(0%);
+//     justify-content: unset;
+//   }
+// }
 
 .mobile_button {
   display: none;
@@ -94,5 +94,5 @@ h1 {
   }
   @media (min-width: 720px) {
     display: none;
-}
+  }
 }
