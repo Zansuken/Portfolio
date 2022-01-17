@@ -18,7 +18,9 @@ function App() {
         {SliderData.map((slide, index) => {
                     return (
                         <div className="project_mobile_thumbnail" key={index}>
-                            <div onClick={() => setView(index)}>
+                            <div onClick={() => {
+                              setView(index)
+                              window.scrollTo(0, 0)}}>
                                 <img src={slide.thumbnail} alt={slide.name} />
                                 <span>{slide.name}</span>
                             </div>

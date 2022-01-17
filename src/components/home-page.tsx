@@ -12,7 +12,7 @@ export function HomePage() {
     // let actualColor = color
     
     return (
-        <div className="home_layout">
+        <div className="home_layout" id='scroll-home'>
             <div className="home_header">
                 <h1>
                     Welcome to Zansuken's Website.

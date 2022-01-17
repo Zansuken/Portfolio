@@ -55,9 +55,6 @@
     }
     div:hover:not(.my_projects) {
         transform: translate(0, -10%);
-        @media (min-width: 980px) {
-            display: none;
-        }
     }
     span {
         color: #79FE0C;
