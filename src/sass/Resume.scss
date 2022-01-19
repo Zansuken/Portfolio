@@ -54,11 +54,27 @@ section {
 .resume {
     top: 5px;
     position: absolute;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: chartreuse;
+        border-radius: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 8px;
+      }
+    img {
+        height: 88vh;
+        border-top-left-radius: 0;
+    }
     span {
         width: 1em;
         position: absolute;
         left: -36.4px;
-        top: -1px;
+        top: 0;
         word-break: break-all;
         line-height: 0.9em;
         padding: 0.2em;
@@ -81,8 +97,10 @@ section {
         left: 40px;
         overflow: scroll;
         border: $green-color 1px solid;
+        border-top-left-radius: 8px;
         img {
-            width: calc(100vw - 40px);
+            width: 80vw;
+            height: unset;
             object-fit: cover;
         }
 

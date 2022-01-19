@@ -13,22 +13,23 @@ function App() {
     <div className="App">
       <main>
         <HomePage />
-        { view !== null && <ProjectView onClick={() => setView(null)} index={view} />}
+        {view !== null && <ProjectView onClick={() => setView(null)} index={view} />}
         <button className="mobile_button" onClick={() => window.scrollBy(0, window.innerHeight)}>Projects</button>
         {SliderData.map((slide, index) => {
-                    return (
-                        <div className="project_mobile_thumbnail" key={index}>
-                            <div onClick={() => {
-                              setView(index)
-                              window.scrollTo(0, 0)}}>
-                                <img src={slide.thumbnail} alt={slide.name} />
-                                <span>{slide.name}</span>
-                            </div>
-                        </div>
-                    )
-                })}
+          return (
+            <div className="project_mobile_thumbnail" key={index}>
+              <div onClick={() => {
+                setView(index)
+                window.scrollTo(0, 0)
+              }}>
+                <img src={slide.thumbnail} alt={slide.name} />
+                <span>{slide.name}</span>
+              </div>
+            </div>
+          )
+        })}
       </main>
-      <Slider onClick={(index) => setView(index)}/>
+      <Slider onClick={(index) => setView(index)} />
     </div>
   );
 }
