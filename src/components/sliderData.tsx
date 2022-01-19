@@ -42,6 +42,6 @@ export const SliderData = [
     {
         thumbnail: "images/orinoco-screenshot.png",
         name: "Orinoco",
-        url: "https://zansuken.github.io/Orinico/client/index.html"
+        url: "https://orinoco-zansuken.netlify.app"
     }
 ]

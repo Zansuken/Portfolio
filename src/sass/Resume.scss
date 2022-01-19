@@ -95,7 +95,7 @@ section {
     @media (max-width: 980px) {
         top: 50px;
         left: 40px;
-        overflow: scroll;
+        overflow-y: scroll;
         border: $green-color 1px solid;
         border-top-left-radius: 8px;
         img {
