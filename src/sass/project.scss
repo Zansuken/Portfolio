@@ -5,12 +5,13 @@
         height: 70vh;
         width: 80vw;
         background-color: #FFF;
+        border-top-right-radius: 0;
         button {
             height: 40px;
             width: 40px;
             position: absolute;
             top: -40px;
-            right: 0;
+            right: -1px;
             background: $green-color;
             color: rgba(0, 0, 0, 0.75);
             font-weight: bolder;
@@ -29,6 +30,20 @@
         }
         iframe {
             width: 100%;
-            border-radius: 8px;
+            border-radius: 8px 0 8px 8px;
+        }
+        a {
+            padding: 0.2em 1em;
+            position: absolute;
+            bottom: -30px;
+            right: 50%;
+            transform: translate(50%, -50%);
+            text-decoration: none;
+            border-radius: 0 0 8px 8px;
+            background-color: chartreuse;
+            color: rgba(0, 0, 0, 0.75);
+            font-size: medium;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }
