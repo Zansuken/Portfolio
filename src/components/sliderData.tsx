@@ -43,5 +43,10 @@ export const SliderData = [
         thumbnail: "images/orinoco-screenshot.png",
         name: "Orinoco",
         url: "https://orinoco-zansuken.netlify.app"
+    },
+    {
+        thumbnail: "images/space-tourism-screenshot.png",
+        name: "Space-Tourism",
+        url: "https://space-tourism-zansuken.netlify.app"
     }
 ]

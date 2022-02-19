@@ -1,5 +1,6 @@
 import '../sass/home-page.scss'
 import AboutMe from './AboutMe';
+import Credits from './Credits';
 // import ColorChanger from './ColorChanger';
 import MyLanguages from './MyLanguages';
 import MyLinks from './MyLinks';
@@ -8,9 +9,9 @@ import Resume from './Resume';
 export function HomePage() {
 
     // const [color, setColor] = useState(Number)
-    
+
     // let actualColor = color
-    
+
     return (
         <div className="home_layout" id='scroll-home'>
             <div className="home_header">
@@ -30,6 +31,7 @@ export function HomePage() {
             <AboutMe />
             <MyLanguages />
             <MyLinks />
+            <Credits />
         </div>
     )
 }
