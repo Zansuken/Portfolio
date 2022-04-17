@@ -4,6 +4,8 @@ import { HomePage } from './home-page';
 import { ProjectView } from './project';
 import { useState } from 'react';
 import { SliderData } from './sliderData';
+import Warning from './Warning';
+import NewPortfolio from './NewPortfolio';
 
 function App() {
 
@@ -11,7 +13,9 @@ function App() {
 
   return (
     <div className="App">
+      <Warning />
       <main>
+        <NewPortfolio />
         <HomePage />
         {view !== null && <ProjectView onClick={() => setView(null)} index={view} />}
         <button className="mobile_button" onClick={() => window.scrollBy(0, window.innerHeight)}>Projects</button>

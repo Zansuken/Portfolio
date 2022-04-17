@@ -1,0 +1,54 @@
+@import 'index.scss';
+
+.link {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 99998;
+  font-size: 1.5rem;
+
+  @keyframes beating {
+    0% {
+      transform: scale(1);
+    }
+
+    12.5% {
+      transform: scale(1.1);
+    }
+
+    25% {
+      transform: scale(1);
+    }
+
+    37.5% {
+      transform: scale(1.1);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: purple;
+      text-decoration: underline;
+    }
+
+
+  }
+
+  animation: beating 1.5s infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+}

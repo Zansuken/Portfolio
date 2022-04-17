@@ -1,0 +1,49 @@
+@import 'index.scss';
+
+.warning {
+  width: 90vw;
+  height: 90vh;
+  position: fixed;
+  background-color: #212121;
+  z-index: 99999;
+  left: 5vw;
+  top: 5vh;
+  border-radius: 5px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+
+  >* {
+    max-width: 70%;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: purple;
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $green-color;
+      color: #212121;
+    }
+  }
+
+}
